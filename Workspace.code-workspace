@@ -15,6 +15,15 @@
 	],
 	"settings": {
 		"pwnAdventure.gamePath": "M:\\Games\\PwnAdventure3\\PwnAdventure3_Data\\PwnAdventure3\\PwnAdventure3\\Binaries\\Win32\\PwnAdventure3-Win32-Shipping.exe",
+		"files.exclude": {
+			"**/.git": true,
+			"*.dll": true,
+			"*.lib": true,
+			"*.exp": true,
+			"*.obj": true,
+			"pubspec.lock": true,
+			".packages": true,
+		}
 	},
 	"launch": {
 		"configurations": [],
