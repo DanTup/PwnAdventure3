@@ -1,3 +1,5 @@
+; This file is hand-created from an export from the GameLogic.dll in the game.
+; You can run dumpbin /EXPORTS GameLogic.dll to get the full list.
 EXPORTS
 ??0GameAPI@@QAE@ABV0@@Z
 ??0GameAPI@@QAE@XZ
