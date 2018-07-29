@@ -8,7 +8,10 @@
 		},
 		{
 			"path": "logs"
+		},
+		{
+			"path": "secrets"
 		}
 	],
-	"settings": {}
+	"settings": {},
 }

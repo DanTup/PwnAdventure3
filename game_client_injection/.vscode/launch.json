@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Injected Game",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"program": "..\\detours\\bin.X86\\withdll.exe",
+			"args": [
+				"/d:game_enhancements.dll",
+				"M:\\Games\\PwnAdventure3\\PwnAdventure3_Data\\PwnAdventure3\\PwnAdventure3\\Binaries\\Win32\\PwnAdventure3-Win32-Shipping.exe"
+			],
+			"preLaunchTask": "compile"
+		}
+	]
+}

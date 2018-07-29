@@ -6,4 +6,5 @@ cd "%~dp0"
 
 lib /def:GameLogic.def /out:GameLogic.lib
 cl /EHsc game_enhancements.cpp /LD /link GameLogic.lib ..\detours\lib.X86\detours.lib
-..\detours\bin.X86\withdll.exe /d:game_enhancements.dll %GAME_PATH%
+rem This is handled in the launch config now.
+rem ..\detours\bin.X86\withdll.exe /d:game_enhancements.dll %GAME_PATH%

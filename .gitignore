@@ -1,4 +1,3 @@
-
 game_client_injection/game_enhancements.dll
 game_client_injection/game_enhancements.exp
 game_client_injection/game_enhancements.lib
@@ -7,3 +6,5 @@ game_client_injection/GameLogic.exp
 game_client_injection/GameLogic.lib
 proxy/.packages
 proxy/pubspec.lock
+logs/
+secrets/
