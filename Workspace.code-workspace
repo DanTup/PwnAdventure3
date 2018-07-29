@@ -14,4 +14,16 @@
 		}
 	],
 	"settings": {},
+	"launch": {
+		"configurations": [],
+		"compounds": [
+			{
+				"name": "Proxy & Injected Game",
+				"configurations": [
+					"Run Proxy",
+					"Injected Game"
+				]
+			}
+		]
+	}
 }
