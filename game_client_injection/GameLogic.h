@@ -1,5 +1,8 @@
 #define DllImport __declspec(dllimport)
 
+#include <map>
+#include <vector>
+
 class GameAPI
 {
   public:
@@ -49,4 +52,115 @@ class GameAPI
 	DllImport void Tick(float);
 	DllImport void TransitionToNewGameServer(void);
 	DllImport void UpdatePlayerCounts(void);
+};
+
+class Player
+{
+  public:
+	DllImport virtual BOOL AddItem(class IItem *, unsigned int, BOOL);
+	DllImport virtual BOOL AddLoadedAmmo(class IItem *, class IItem *, unsigned int);
+	DllImport virtual void AdvanceQuestToState(class IQuest *, class IQuestState *);
+	DllImport virtual void BuyItem(class IActor *, class IItem *, unsigned int);
+	DllImport virtual BOOL CanJump(void);
+	DllImport virtual BOOL CanReload(void);
+	DllImport virtual void Chat(char const *);
+	DllImport virtual void CompleteQuest(class IQuest *);
+	DllImport virtual void Damage(class IActor *, class IItem *, int, enum DamageType);
+	DllImport virtual void EnterAIZone(char const *);
+	DllImport void EnterNPCShop(class NPC *);
+	DllImport virtual void EnterRegion(char const *);
+	DllImport virtual void EquipItem(unsigned int, class IItem *);
+	DllImport virtual void ExitAIZone(char const *);
+	DllImport virtual void FastTravel(char const *, char const *);
+	DllImport virtual void FreeQuestList(class IQuest **);
+	DllImport virtual class IActor *GetActorInterface(void);
+	DllImport virtual unsigned char GetAvatarIndex(void);
+	DllImport virtual unsigned int GetCircuitInputs(char const *);
+	DllImport virtual void GetCircuitOutputs(char const *, BOOL *, unsigned int);
+	DllImport virtual unsigned int const *GetColors(void);
+	DllImport virtual class IItem *GetCurrentItem(void);
+	DllImport virtual class IQuest *GetCurrentQuest(void);
+	DllImport virtual unsigned int GetCurrentSlot(void);
+	DllImport virtual class IFastTravel *GetFastTravelDestinations(char const *);
+	DllImport virtual class IInventory *GetInventory(void);
+	DllImport virtual float GetItemCooldown(class IItem *);
+	DllImport virtual unsigned int GetItemCount(class IItem *);
+	DllImport virtual class IItem *GetItemForSlot(unsigned int);
+	DllImport virtual float GetJumpHoldTime(void);
+	DllImport virtual float GetJumpSpeed(void);
+	DllImport virtual unsigned int GetLoadedAmmo(class IItem *);
+	DllImport virtual class ILocalPlayer *GetLocalPlayer(void) const;
+	DllImport virtual struct Vector3 GetLookPosition(void);
+	DllImport virtual struct Rotation GetLookRotation(void);
+	DllImport virtual int GetMana(void);
+	DllImport virtual class IPlayer *GetPlayerInterface(void);
+	DllImport virtual class IQuest **GetQuestList(unsigned int *);
+	DllImport struct LocationAndRotation GetSpawnLocation(void);
+	DllImport virtual struct PlayerQuestState GetStateForQuest(class IQuest *);
+	DllImport virtual float GetWalkingSpeed(void);
+	DllImport virtual BOOL HasAchieved(class IAchievement *);
+	DllImport virtual BOOL HasPickedUp(char const *);
+	DllImport void InitCircuitStates(void);
+	DllImport virtual BOOL IsItemOnCooldown(class IItem *);
+	DllImport virtual BOOL IsLocalPlayer(void) const;
+	DllImport virtual BOOL IsPvPDesired(void);
+	DllImport virtual BOOL IsPvPEnabled(void);
+	DllImport virtual BOOL IsQuestCompleted(class IQuest *);
+	DllImport virtual BOOL IsQuestStarted(class IQuest *);
+	DllImport virtual void MarkAsAchieved(class IAchievement *);
+	DllImport virtual void MarkAsPickedUp(char const *);
+	DllImport virtual void OnDestroyActor(void);
+	DllImport void OnKillEvent(class IPlayer *, class IActor *, class IItem *);
+	DllImport void OnTravelComplete(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport BOOL PerformAddItem(class IItem *, unsigned int, BOOL);
+	DllImport void PerformAdvanceQuestToState(class IQuest *, class IQuestState *);
+	DllImport void PerformBuyItem(class IActor *, class IItem *, unsigned int);
+	DllImport void PerformChat(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport void PerformCompleteQuest(class IQuest *);
+	DllImport void PerformEquipItem(unsigned int, class IItem *);
+	DllImport void PerformFastTravel(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport void PerformMarkAsPickedUp(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport BOOL PerformRemoveItem(class IItem *, unsigned int);
+	DllImport void PerformRequestReload(void);
+	DllImport void PerformRespawn(void);
+	DllImport void PerformSellItem(class IActor *, class IItem *, unsigned int);
+	DllImport void PerformSetCircuitInputs(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, unsigned int);
+	DllImport void PerformSetCurrentQuest(class IQuest *);
+	DllImport void PerformSetPvPEnabled(BOOL);
+	DllImport void PerformStartQuest(class IQuest *);
+	DllImport void PerformSubmitDLCKey(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport void PerformTeleport(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport void PerformTransitionToNPCState(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport void ReceiveChat(Player *, const std::string &);
+	DllImport virtual BOOL RemoveItem(class IItem *, unsigned int);
+	DllImport virtual BOOL RemoveLoadedAmmo(class IItem *, unsigned int);
+	DllImport virtual void RequestReload(void);
+	DllImport virtual void Respawn(void);
+	DllImport virtual void SellItem(class IActor *, class IItem *, unsigned int);
+	DllImport virtual void SendEvent(class WriteStream const &);
+	DllImport virtual void SetCircuitInputs(char const *, unsigned int);
+	DllImport void SetCurrentNPCState(class NPC *, class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport virtual void SetCurrentQuest(class IQuest *);
+	DllImport virtual void SetCurrentSlot(unsigned int);
+	DllImport virtual void SetFireRequestState(BOOL);
+	// DllImport void SetInitialItemState(class std::map<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>, struct ItemCountInfo, struct std::less<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>>, class std::allocator<struct std::pair<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const, struct ItemCountInfo>>> const &, class std::vector<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>, class std::allocator<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>>> const &, unsigned char);
+	// DllImport void SetInitialQuestStates(class std::map<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>, struct QuestStateInfo, struct std::less<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>>, class std::allocator<struct std::pair<class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const, struct QuestStateInfo>>> const &, class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &);
+	DllImport virtual void SetItemCooldown(class IItem *, float, BOOL);
+	DllImport virtual void SetJumpState(BOOL);
+	DllImport virtual void SetPvPDesired(BOOL);
+	DllImport virtual void SetSprintState(BOOL);
+	DllImport virtual BOOL ShouldReceivePositionUpdates(void);
+	DllImport virtual void StartQuest(class IQuest *);
+	DllImport virtual void SubmitDLCKey(char const *);
+	DllImport virtual void Teleport(char const *);
+	DllImport virtual void Tick(float);
+	DllImport virtual void TransitionToNPCState(char const *);
+	DllImport virtual void TriggerEvent(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, class IActor *, BOOL);
+	DllImport virtual void UpdateCountdown(int);
+	DllImport virtual void UpdateState(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, BOOL);
+	DllImport virtual BOOL UseMana(int);
+	DllImport virtual void WriteAllEvents(class WriteStream &);
+
+  protected:
+	DllImport virtual void OnKilled(class IActor *, class IItem *);
 };
