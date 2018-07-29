@@ -1,0 +1,5 @@
+name: pwn_adventure_3_proxy
+version: 0.1.0
+
+dependencies:
+  path:

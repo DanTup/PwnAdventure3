@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "game_client_injection"
+		},
+		{
+			"path": "proxy"
+		},
+		{
+			"path": "logs"
 		}
 	],
 	"settings": {}
