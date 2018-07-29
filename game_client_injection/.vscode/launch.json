@@ -9,7 +9,7 @@
 			"program": "..\\detours\\bin.X86\\withdll.exe",
 			"args": [
 				"/d:game_enhancements.dll",
-				"M:\\Games\\PwnAdventure3\\PwnAdventure3_Data\\PwnAdventure3\\PwnAdventure3\\Binaries\\Win32\\PwnAdventure3-Win32-Shipping.exe"
+				"${config:pwnAdventure.gamePath}"
 			],
 			"preLaunchTask": "compile"
 		}
