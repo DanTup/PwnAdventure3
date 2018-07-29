@@ -6,23 +6,13 @@
 #include <string>
 #include <windows.h>
 #include <fstream>
-#include "C:\\Users\\danny\\Desktop\\Detours-4.0.1\\Detours-4.0.1\\include\\detours.h"
+#include "..\\detours\\include\\detours.h"
+#include "GameLogic.h"
 #define DllExport __declspec(dllexport)
-#define DllImport __declspec(dllimport)
 
 std::ofstream myfile;
 
-//////////////////////////////////////////////////////////////// Target Class.
-//
-class GameAPI
-{
-  public:
-    DllImport int GetTeamPlayerCount(void);
-};
-
-//////////////////////////////////////////////////////////////// Detour Class.
-//
-class CDetour /* add ": public CMember" to enable access to member variables... */
+class CDetour /* add ": public CGameApi" to enable access to member variables... */
 {
   public:
     int Mine_GetTeamPlayerCount(void);
