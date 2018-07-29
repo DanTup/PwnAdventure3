@@ -12,31 +12,43 @@
 
 std::ofstream myfile;
 
-class CDetour /* add ": public CGameApi" to enable access to member variables... */
+class GameApiDetour /* add ": public CGameApi" to enable access to member variables... */
 {
   public:
     int Mine_GetTeamPlayerCount(void);
-    static int (CDetour::*Real_GetTeamPlayerCount)(void);
+    static int (GameApiDetour::*Real_GetTeamPlayerCount)(void);
+
+    void Mine_Login(char const *u, char const *p);
+    static void (GameApiDetour::*Real_Login)(char const *, char const *);
 
     // Class shouldn't have any member variables or virtual functions.
 };
 
-int CDetour::Mine_GetTeamPlayerCount(void)
+int GameApiDetour::Mine_GetTeamPlayerCount(void)
 {
     return 123;
     //return (this->*Real_GetTeamPlayerCount)();
 }
 
-int (CDetour::*CDetour::Real_GetTeamPlayerCount)(void) = (int (CDetour::*)(void)) & GameAPI::GetTeamPlayerCount;
+void GameApiDetour::Mine_Login(char const *u, char const *p)
+{
+    // This ways user/pass during login.
+    //(this->*Real_Login)(p, u);
+    (this->*Real_Login)(u, p);
+}
+
+int (GameApiDetour::*GameApiDetour::Real_GetTeamPlayerCount)(void) = (int (GameApiDetour::*)(void)) & GameAPI::GetTeamPlayerCount;
+void (GameApiDetour::*GameApiDetour::Real_Login)(char const *, char const *) = (void (GameApiDetour::*)(char const *, char const *)) & GameAPI::Login;
 
 DllExport BOOL DllMain(HINSTANCE hinst, DWORD dwReason, LPVOID reserved)
 {
-    int (GameAPI::*pfTarget)(void) = &GameAPI::GetTeamPlayerCount;
-    int (CDetour::*pfMine)(void) = &CDetour::Mine_GetTeamPlayerCount;
+    int (GameApiDetour::*pfMine_GetTeamPlayerCount)(void) = &GameApiDetour::Mine_GetTeamPlayerCount;
+    void (GameApiDetour::*pfMine_Login)(char const *, char const *) = &GameApiDetour::Mine_Login;
 
     DetourTransactionBegin();
     DetourUpdateThread(GetCurrentThread());
-    DetourAttach(&(PVOID &)CDetour::Real_GetTeamPlayerCount, *(PBYTE *)&pfMine);
+    DetourAttach(&(PVOID &)GameApiDetour::Real_GetTeamPlayerCount, *(PBYTE *)&pfMine_GetTeamPlayerCount);
+    DetourAttach(&(PVOID &)GameApiDetour::Real_Login, *(PBYTE *)&pfMine_Login);
     DetourTransactionCommit();
 
     return TRUE;
