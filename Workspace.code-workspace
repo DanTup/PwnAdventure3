@@ -15,6 +15,7 @@
 	],
 	"settings": {
 		"pwnAdventure.gamePath": "M:\\Games\\PwnAdventure3\\PwnAdventure3_Data\\PwnAdventure3\\PwnAdventure3\\Binaries\\Win32\\PwnAdventure3-Win32-Shipping.exe",
+		"pwnAdventure.devCmdPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Community\\Common7\\Tools\\VsDevCmd.bat",
 		"files.exclude": {
 			"**/.git": true,
 			"*.dll": true,

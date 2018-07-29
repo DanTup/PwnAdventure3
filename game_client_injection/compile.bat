@@ -1,5 +1,5 @@
 rem Set up PATH for the C++ tools.
-call "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\Common7\Tools\VsDevCmd.bat"
+call %1
 
 rem Set cwd back (the .bat above changes the dir).
 cd "%~dp0"

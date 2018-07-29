@@ -17,8 +17,7 @@ The DLL injection is written specifically for Windows. LiveOverflow's videos cov
 - Clone repo + submodule
 - Fix up `gameServer` hostname in `proxy/bin/proxy.dart` to point at the server you're using
 - Run name(?) in the detours/sample folder
-- Check/fix path to `VsDevCmd.bat` in `game_client_injection\compile.bat` file
-- Update path to game in `Workspace.code-workspace` file
+- Update paths to game client and `VsDevCmd.bat` in `Workspace.code-workspace` file
 - `File` -> `Open Workspace` in VS Code and select `Workspace.code-workspace`
 - Select the proxy and/or the injected client in debug side bar
 - Press `F5`

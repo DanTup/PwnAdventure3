@@ -12,7 +12,7 @@
 
 std::ofstream myfile;
 
-class GameApiDetour /* add ": public CGameApi" to enable access to member variables... */
+class GameApiDetour /* add ": public GameApi" to enable access to member variables... */
 {
   public:
     int Mine_GetTeamPlayerCount(void);

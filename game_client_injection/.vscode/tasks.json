@@ -5,6 +5,9 @@
 			"label": "compile",
 			"type": "shell",
 			"command": ".\\compile.bat",
+			"args": [
+				"${config:pwnAdventure.devCmdPath}",
+			],
 			"problemMatcher": [],
 			"group": {
 				"kind": "build",
