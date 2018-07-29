@@ -23,102 +23,102 @@ File Type: DLL
 
     ordinal hint RVA      name
 
-          1    0 00001500 ??0GameAPI@@QAE@ABV0@@Z
-          2    1 0001A2D0 ??0GameAPI@@QAE@XZ
-          3    2 000015D0 ??0IActor@@QAE@ABV0@@Z
-          4    3 000015C0 ??0IActor@@QAE@XZ
-          5    4 00001900 ??0IFastTravel@@QAE@ABV0@@Z
-          6    5 000018F0 ??0IFastTravel@@QAE@XZ
-          7    6 00001870 ??0IInventory@@QAE@ABV0@@Z
-          8    7 00001860 ??0IInventory@@QAE@XZ
-          9    8 00001540 ??0IItem@@QAE@ABV0@@Z
-         10    9 00001530 ??0IItem@@QAE@XZ
-         11    A 000019B0 ??0IPlayer@@QAE@ABV0@@Z
-         12    B 000019A0 ??0IPlayer@@QAE@XZ
-         13    C 000071B0 ??0IQuest@@QAE@ABV0@@Z
-         14    D 000071A0 ??0IQuest@@QAE@XZ
-         15    E 000071D0 ??0IQuestState@@QAE@ABV0@@Z
-         16    F 000071C0 ??0IQuestState@@QAE@XZ
-         17   10 000015B0 ??1IActor@@UAE@XZ
-         18   11 000018E0 ??1IFastTravel@@UAE@XZ
-         19   12 00001850 ??1IInventory@@UAE@XZ
-         20   13 00001520 ??1IItem@@UAE@XZ
-         21   14 00001510 ??4GameAPI@@QAEAAV0@ABV0@@Z
-         22   15 00001510 ??4IActor@@QAEAAV0@ABV0@@Z
-         23   16 00001510 ??4IFastTravel@@QAEAAV0@ABV0@@Z
-         24   17 00001510 ??4IInventory@@QAEAAV0@ABV0@@Z
-         25   18 00001510 ??4IItem@@QAEAAV0@ABV0@@Z
-         26   19 00001510 ??4IPlayer@@QAEAAV0@ABV0@@Z
-         27   1A 00001510 ??4IQuest@@QAEAAV0@ABV0@@Z
-         28   1B 00001510 ??4IQuestState@@QAEAAV0@ABV0@@Z
-         29   1C 0006F318 ??_7GameAPI@@6B@
-         30   1D 0006F6B4 ??_7IActor@@6B@
-         31   1E 0006F560 ??_7IFastTravel@@6B@
-         32   1F 0006F784 ??_7IInventory@@6B@
-         33   20 0006F630 ??_7IItem@@6B@
-         34   21 0006F438 ??_7IPlayer@@6B@
-         35   22 0006FD0C ??_7IQuest@@6B@
-         36   23 0006FD20 ??_7IQuestState@@6B@
-         37   24 00001970 ?AddRef@IPlayer@@QAEXXZ
-         38   25 00020360 ?ConnectToGameServer@GameAPI@@QAEXPBDGH0@Z
-         39   26 0001EF00 ?ConnectToMasterServer@GameAPI@@QAEXPBDG0@Z
-         40   27 0001FCF0 ?CreateCharacter@GameAPI@@QAEXPBDEPAI@Z
-         41   28 00020830 ?CreateRemoteActorByName@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z
-         42   29 000208E0 ?CreateRemoteActorByNameWithOwner@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_NPAVIActor@@@Z
-         43   2A 0001FE50 ?DeleteCharacter@GameAPI@@QAEXH@Z
-         44   2B 0001F110 ?DisconnectFromMasterServer@GameAPI@@QAEXXZ
-         45   2C 0001E7E0 ?Enqueue@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z
-         46   2D 0001DF90 ?GetAchievement@GameAPI@@QAEPAVIAchievement@@PBD@Z
-         47   2E 0001E240 ?GetAchievementList@GameAPI@@QAE?AV?$vector@PAVIAchievement@@V?$allocator@PAVIAchievement@@@std@@@std@@XZ
-         48   2F 0001E040 ?GetAchievements@GameAPI@@QAEPAVIAchievementList@@XZ
-         49   30 0001EE90 ?GetCharacterId@GameAPI@@QAEHXZ
-         50   31 0001E410 ?GetFastTravelDestination@GameAPI@@QAEPAVFastTravelDestination@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
-         51   32 00020CA0 ?GetGameAPIObject@@YAPAVGameAPI@@XZ
-         52   33 0001EDA0 ?GetGameServer@GameAPI@@QAEPAVGameServerConnection@@XZ
-         53   34 0001E3E0 ?GetGoldenEggCount@GameAPI@@QAEIXZ
-         54   35 0001E3C0 ?GetGoldenEggList@GameAPI@@QAE?AV?$vector@PAVItemPickup@@V?$allocator@PAVItemPickup@@@std@@@std@@XZ
-         55   36 0001DE20 ?GetItemByName@GameAPI@@QAEPAVIItem@@PBD@Z
-         56   37 0001E760 ?GetLootTier@GameAPI@@QAEPAVLootTier@@I@Z
-         57   38 0001ECE0 ?GetMasterServer@GameAPI@@QAEPAVMasterServerConnection@@XZ
-         58   39 0001E4F0 ?GetNamedLocationPoint@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAULocationAndRotation@@@Z
-         59   3A 0001E440 ?GetNamedLocationPointList@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z
-         60   3B 0001DED0 ?GetQuestByName@GameAPI@@QAEPAVIQuest@@PBD@Z
-         61   3C 0001E560 ?GetSpawnPoints@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z
-         62   3D 0001EEE0 ?GetTeamHash@GameAPI@@QAEPBDXZ
-         63   3E 0001EEC0 ?GetTeamName@GameAPI@@QAEPBDXZ
-         64   3F 00020A00 ?GetTeamPlayerCount@GameAPI@@QAEHXZ
-         65   40 00020AC0 ?GetTeammates@GameAPI@@QAEXXZ
-         66   41 00020A10 ?GetTotalPlayerCount@GameAPI@@QAEHXZ
-         67   42 0001EE80 ?GetUserId@GameAPI@@QAEHXZ
-         68   43 0001EEA0 ?GetUserNameW@GameAPI@@QAEPBDXZ
-         69   44 0001E640 ?GiveAll@GameAPI@@QAEXPAVIPlayer@@@Z
-         70   45 000209D0 ?HasActorFactory@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
-         71   46 00001990 ?HideCountdown@IPlayer@@QAEXXZ
-         72   47 0001D140 ?InitClient@GameAPI@@QAEXPAVILocalPlayer@@@Z
-         73   48 0001CFC0 ?InitLocal@GameAPI@@QAEXPAVILocalPlayer@@@Z
-         74   49 0001A360 ?InitObjects@GameAPI@@AAEXXZ
-         75   4A 0001D770 ?InitServer@GameAPI@@QAEXPBDGH0G000@Z
-         76   4B 0001DDE0 ?IsAuthority@GameAPI@@QAE_NXZ
-         77   4C 0001EE70 ?IsConnectedToGameServer@GameAPI@@QAE_NXZ
-         78   4D 0001EE60 ?IsConnectedToMasterServer@GameAPI@@QAE_NXZ
-         79   4E 0001DE00 ?IsDedicatedServer@GameAPI@@QAE_NXZ
-         80   4F 0001DE10 ?IsTransitioningToNewServer@GameAPI@@QAE_NXZ
-         81   50 0001FF30 ?JoinGameServer@GameAPI@@QAEXH_N@Z
-         82   51 0001E790 ?Log@GameAPI@@QAAXPBDZZ
-         83   52 0001F160 ?Login@GameAPI@@QAEXPBD0@Z
-         84   53 0001E880 ?Process@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z
-         85   54 00020CB0 ?Random@@YAHH@Z
-         86   55 00020CD0 ?Random@@YAHHH@Z
-         87   56 00020CF0 ?RandomFloat@@YAMMM@Z
-         88   57 0001F910 ?Register@GameAPI@@QAEXPBD00@Z
-         89   58 00001980 ?Release@IPlayer@@QAEXXZ
-         90   59 00020C90 ?SetGameAPIObject@@YAXPAVGameAPI@@@Z
-         91   5A 0001D9D0 ?Shutdown@GameAPI@@QAEXXZ
-         92   5B 0001D1E0 ?StartServerListener@GameAPI@@AAEXABUServerInfo@@@Z
-         93   5C 00020680 ?SubmitAnswer@GameAPI@@QAEXPBD0@Z
-         94   5D 0001DBD0 ?Tick@GameAPI@@QAEXM@Z
-         95   5E 00020600 ?TransitionToNewGameServer@GameAPI@@QAEXXZ
-         96   5F 00020A20 ?UpdatePlayerCounts@GameAPI@@QAEXXZ
+          1    0 00001500 ??0GameAPI@@QAE@ABV0@@Z = ??0GameAPI@@QAE@ABV0@@Z (public: __thiscall GameAPI::GameAPI(class GameAPI const &))
+          2    1 0001A2D0 ??0GameAPI@@QAE@XZ = ??0GameAPI@@QAE@XZ (public: __thiscall GameAPI::GameAPI(void))
+          3    2 000015D0 ??0IActor@@QAE@ABV0@@Z = ??0IActor@@QAE@ABV0@@Z (public: __thiscall IActor::IActor(class IActor const &))
+          4    3 000015C0 ??0IActor@@QAE@XZ = ??0IActor@@QAE@XZ (public: __thiscall IActor::IActor(void))
+          5    4 00001900 ??0IFastTravel@@QAE@ABV0@@Z = ??0IFastTravel@@QAE@ABV0@@Z (public: __thiscall IFastTravel::IFastTravel(class IFastTravel const &))
+          6    5 000018F0 ??0IFastTravel@@QAE@XZ = ??0IFastTravel@@QAE@XZ (public: __thiscall IFastTravel::IFastTravel(void))
+          7    6 00001870 ??0IInventory@@QAE@ABV0@@Z = ??0IInventory@@QAE@ABV0@@Z (public: __thiscall IInventory::IInventory(class IInventory const &))
+          8    7 00001860 ??0IInventory@@QAE@XZ = ??0IInventory@@QAE@XZ (public: __thiscall IInventory::IInventory(void))
+          9    8 00001540 ??0IItem@@QAE@ABV0@@Z = ??0IItem@@QAE@ABV0@@Z (public: __thiscall IItem::IItem(class IItem const &))
+         10    9 00001530 ??0IItem@@QAE@XZ = ??0IItem@@QAE@XZ (public: __thiscall IItem::IItem(void))
+         11    A 000019B0 ??0IPlayer@@QAE@ABV0@@Z = ??0IPlayer@@QAE@ABV0@@Z (public: __thiscall IPlayer::IPlayer(class IPlayer const &))
+         12    B 000019A0 ??0IPlayer@@QAE@XZ = ??0IPlayer@@QAE@XZ (public: __thiscall IPlayer::IPlayer(void))
+         13    C 000071B0 ??0IQuest@@QAE@ABV0@@Z = ??0IQuest@@QAE@ABV0@@Z (public: __thiscall IQuest::IQuest(class IQuest const &))
+         14    D 000071A0 ??0IQuest@@QAE@XZ = ??0IQuest@@QAE@XZ (public: __thiscall IQuest::IQuest(void))
+         15    E 000071D0 ??0IQuestState@@QAE@ABV0@@Z = ??0IQuestState@@QAE@ABV0@@Z (public: __thiscall IQuestState::IQuestState(class IQuestState const &))
+         16    F 000071C0 ??0IQuestState@@QAE@XZ = ??0IQuestState@@QAE@XZ (public: __thiscall IQuestState::IQuestState(void))
+         17   10 000015B0 ??1IActor@@UAE@XZ = ??1IActor@@UAE@XZ (public: virtual __thiscall IActor::~IActor(void))
+         18   11 000018E0 ??1IFastTravel@@UAE@XZ = ??1IFastTravel@@UAE@XZ (public: virtual __thiscall IFastTravel::~IFastTravel(void))
+         19   12 00001850 ??1IInventory@@UAE@XZ = ??1IInventory@@UAE@XZ (public: virtual __thiscall IInventory::~IInventory(void))
+         20   13 00001520 ??1IItem@@UAE@XZ = ??1IItem@@UAE@XZ (public: virtual __thiscall IItem::~IItem(void))
+         21   14 00001510 ??4GameAPI@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         22   15 00001510 ??4IActor@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         23   16 00001510 ??4IFastTravel@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         24   17 00001510 ??4IInventory@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         25   18 00001510 ??4IItem@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         26   19 00001510 ??4IPlayer@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         27   1A 00001510 ??4IQuest@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         28   1B 00001510 ??4IQuestState@@QAEAAV0@ABV0@@Z = ??4GameAPI@@QAEAAV0@ABV0@@Z (public: class GameAPI & __thiscall GameAPI::operator=(class GameAPI const &))
+         29   1C 0006F318 ??_7GameAPI@@6B@ = ??_7GameAPI@@6B@ (const GameAPI::`vftable')
+         30   1D 0006F6B4 ??_7IActor@@6B@ = ??_7IActor@@6B@ (const IActor::`vftable')
+         31   1E 0006F560 ??_7IFastTravel@@6B@ = ??_7IFastTravel@@6B@ (const IFastTravel::`vftable')
+         32   1F 0006F784 ??_7IInventory@@6B@ = ??_7IInventory@@6B@ (const IInventory::`vftable')
+         33   20 0006F630 ??_7IItem@@6B@ = ??_7IItem@@6B@ (const IItem::`vftable')
+         34   21 0006F438 ??_7IPlayer@@6B@ = ??_7IPlayer@@6B@ (const IPlayer::`vftable')
+         35   22 0006FD0C ??_7IQuest@@6B@ = ??_7IQuest@@6B@ (const IQuest::`vftable')
+         36   23 0006FD20 ??_7IQuestState@@6B@ = ??_7IQuestState@@6B@ (const IQuestState::`vftable')
+         37   24 00001970 ?AddRef@IPlayer@@QAEXXZ = ?AddRef@IPlayer@@QAEXXZ (public: void __thiscall IPlayer::AddRef(void))
+         38   25 00020360 ?ConnectToGameServer@GameAPI@@QAEXPBDGH0@Z = ?ConnectToGameServer@GameAPI@@QAEXPBDGH0@Z (public: void __thiscall GameAPI::ConnectToGameServer(char const *,unsigned short,int,char const *))
+         39   26 0001EF00 ?ConnectToMasterServer@GameAPI@@QAEXPBDG0@Z = ?ConnectToMasterServer@GameAPI@@QAEXPBDG0@Z (public: void __thiscall GameAPI::ConnectToMasterServer(char const *,unsigned short,char const *))
+         40   27 0001FCF0 ?CreateCharacter@GameAPI@@QAEXPBDEPAI@Z = ?CreateCharacter@GameAPI@@QAEXPBDEPAI@Z (public: void __thiscall GameAPI::CreateCharacter(char const *,unsigned char,unsigned int *))
+         41   28 00020830 ?CreateRemoteActorByName@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z = ?CreateRemoteActorByName@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z (public: class Actor * __thiscall GameAPI::CreateRemoteActorByName(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool))
+         42   29 000208E0 ?CreateRemoteActorByNameWithOwner@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_NPAVIActor@@@Z = ?CreateRemoteActorByNameWithOwner@GameAPI@@QAEPAVActor@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_NPAVIActor@@@Z (public: class Actor * __thiscall GameAPI::CreateRemoteActorByNameWithOwner(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool,class IActor *))
+         43   2A 0001FE50 ?DeleteCharacter@GameAPI@@QAEXH@Z = ?DeleteCharacter@GameAPI@@QAEXH@Z (public: void __thiscall GameAPI::DeleteCharacter(int))
+         44   2B 0001F110 ?DisconnectFromMasterServer@GameAPI@@QAEXXZ = ?DisconnectFromMasterServer@GameAPI@@QAEXXZ (public: void __thiscall GameAPI::DisconnectFromMasterServer(void))
+         45   2C 0001E7E0 ?Enqueue@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z = ?Enqueue@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z (public: void __thiscall GameAPI::Enqueue(class std::function<void __cdecl(void)> const &))
+         46   2D 0001DF90 ?GetAchievement@GameAPI@@QAEPAVIAchievement@@PBD@Z = ?GetAchievement@GameAPI@@QAEPAVIAchievement@@PBD@Z (public: class IAchievement * __thiscall GameAPI::GetAchievement(char const *))
+         47   2E 0001E240 ?GetAchievementList@GameAPI@@QAE?AV?$vector@PAVIAchievement@@V?$allocator@PAVIAchievement@@@std@@@std@@XZ = ?GetAchievementList@GameAPI@@QAE?AV?$vector@PAVIAchievement@@V?$allocator@PAVIAchievement@@@std@@@std@@XZ (public: class std::vector<class IAchievement *,class std::allocator<class IAchievement *> > __thiscall GameAPI::GetAchievementList(void))
+         48   2F 0001E040 ?GetAchievements@GameAPI@@QAEPAVIAchievementList@@XZ = ?GetAchievements@GameAPI@@QAEPAVIAchievementList@@XZ (public: class IAchievementList * __thiscall GameAPI::GetAchievements(void))
+         49   30 0001EE90 ?GetCharacterId@GameAPI@@QAEHXZ = ?GetCharacterId@GameAPI@@QAEHXZ (public: int __thiscall GameAPI::GetCharacterId(void))
+         50   31 0001E410 ?GetFastTravelDestination@GameAPI@@QAEPAVFastTravelDestination@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z = ?GetFastTravelDestination@GameAPI@@QAEPAVFastTravelDestination@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z (public: class FastTravelDestination * __thiscall GameAPI::GetFastTravelDestination(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &))
+         51   32 00020CA0 ?GetGameAPIObject@@YAPAVGameAPI@@XZ = ?GetGameAPIObject@@YAPAVGameAPI@@XZ (class GameAPI * __cdecl GetGameAPIObject(void))
+         52   33 0001EDA0 ?GetGameServer@GameAPI@@QAEPAVGameServerConnection@@XZ = ?GetGameServer@GameAPI@@QAEPAVGameServerConnection@@XZ (public: class GameServerConnection * __thiscall GameAPI::GetGameServer(void))
+         53   34 0001E3E0 ?GetGoldenEggCount@GameAPI@@QAEIXZ = ?GetGoldenEggCount@GameAPI@@QAEIXZ (public: unsigned int __thiscall GameAPI::GetGoldenEggCount(void))
+         54   35 0001E3C0 ?GetGoldenEggList@GameAPI@@QAE?AV?$vector@PAVItemPickup@@V?$allocator@PAVItemPickup@@@std@@@std@@XZ = ?GetGoldenEggList@GameAPI@@QAE?AV?$vector@PAVItemPickup@@V?$allocator@PAVItemPickup@@@std@@@std@@XZ (public: class std::vector<class ItemPickup *,class std::allocator<class ItemPickup *> > __thiscall GameAPI::GetGoldenEggList(void))
+         55   36 0001DE20 ?GetItemByName@GameAPI@@QAEPAVIItem@@PBD@Z = ?GetItemByName@GameAPI@@QAEPAVIItem@@PBD@Z (public: class IItem * __thiscall GameAPI::GetItemByName(char const *))
+         56   37 0001E760 ?GetLootTier@GameAPI@@QAEPAVLootTier@@I@Z = ?GetLootTier@GameAPI@@QAEPAVLootTier@@I@Z (public: class LootTier * __thiscall GameAPI::GetLootTier(unsigned int))
+         57   38 0001ECE0 ?GetMasterServer@GameAPI@@QAEPAVMasterServerConnection@@XZ = ?GetMasterServer@GameAPI@@QAEPAVMasterServerConnection@@XZ (public: class MasterServerConnection * __thiscall GameAPI::GetMasterServer(void))
+         58   39 0001E4F0 ?GetNamedLocationPoint@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAULocationAndRotation@@@Z = ?GetNamedLocationPoint@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAULocationAndRotation@@@Z (public: bool __thiscall GameAPI::GetNamedLocationPoint(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,struct LocationAndRotation &))
+         59   3A 0001E440 ?GetNamedLocationPointList@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z = ?GetNamedLocationPointList@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z (public: class std::vector<struct LocationAndRotation,class std::allocator<struct LocationAndRotation> > __thiscall GameAPI::GetNamedLocationPointList(char const *))
+         60   3B 0001DED0 ?GetQuestByName@GameAPI@@QAEPAVIQuest@@PBD@Z = ?GetQuestByName@GameAPI@@QAEPAVIQuest@@PBD@Z (public: class IQuest * __thiscall GameAPI::GetQuestByName(char const *))
+         61   3C 0001E560 ?GetSpawnPoints@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z = ?GetSpawnPoints@GameAPI@@QAE?AV?$vector@ULocationAndRotation@@V?$allocator@ULocationAndRotation@@@std@@@std@@PBD@Z (public: class std::vector<struct LocationAndRotation,class std::allocator<struct LocationAndRotation> > __thiscall GameAPI::GetSpawnPoints(char const *))
+         62   3D 0001EEE0 ?GetTeamHash@GameAPI@@QAEPBDXZ = ?GetTeamHash@GameAPI@@QAEPBDXZ (public: char const * __thiscall GameAPI::GetTeamHash(void))
+         63   3E 0001EEC0 ?GetTeamName@GameAPI@@QAEPBDXZ = ?GetTeamName@GameAPI@@QAEPBDXZ (public: char const * __thiscall GameAPI::GetTeamName(void))
+         64   3F 00020A00 ?GetTeamPlayerCount@GameAPI@@QAEHXZ = ?GetTeamPlayerCount@GameAPI@@QAEHXZ (public: int __thiscall GameAPI::GetTeamPlayerCount(void))
+         65   40 00020AC0 ?GetTeammates@GameAPI@@QAEXXZ = ?GetTeammates@GameAPI@@QAEXXZ (public: void __thiscall GameAPI::GetTeammates(void))
+         66   41 00020A10 ?GetTotalPlayerCount@GameAPI@@QAEHXZ = ?GetTotalPlayerCount@GameAPI@@QAEHXZ (public: int __thiscall GameAPI::GetTotalPlayerCount(void))
+         67   42 0001EE80 ?GetUserId@GameAPI@@QAEHXZ = ?GetUserId@GameAPI@@QAEHXZ (public: int __thiscall GameAPI::GetUserId(void))
+         68   43 0001EEA0 ?GetUserNameW@GameAPI@@QAEPBDXZ = ?GetUserNameW@GameAPI@@QAEPBDXZ (public: char const * __thiscall GameAPI::GetUserNameW(void))
+         69   44 0001E640 ?GiveAll@GameAPI@@QAEXPAVIPlayer@@@Z = ?GiveAll@GameAPI@@QAEXPAVIPlayer@@@Z (public: void __thiscall GameAPI::GiveAll(class IPlayer *))
+         70   45 000209D0 ?HasActorFactory@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z = ?HasActorFactory@GameAPI@@QAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z (public: bool __thiscall GameAPI::HasActorFactory(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &))
+         71   46 00001990 ?HideCountdown@IPlayer@@QAEXXZ = ?HideCountdown@IPlayer@@QAEXXZ (public: void __thiscall IPlayer::HideCountdown(void))
+         72   47 0001D140 ?InitClient@GameAPI@@QAEXPAVILocalPlayer@@@Z = ?InitClient@GameAPI@@QAEXPAVILocalPlayer@@@Z (public: void __thiscall GameAPI::InitClient(class ILocalPlayer *))
+         73   48 0001CFC0 ?InitLocal@GameAPI@@QAEXPAVILocalPlayer@@@Z = ?InitLocal@GameAPI@@QAEXPAVILocalPlayer@@@Z (public: void __thiscall GameAPI::InitLocal(class ILocalPlayer *))
+         74   49 0001A360 ?InitObjects@GameAPI@@AAEXXZ = ?InitObjects@GameAPI@@AAEXXZ (private: void __thiscall GameAPI::InitObjects(void))
+         75   4A 0001D770 ?InitServer@GameAPI@@QAEXPBDGH0G000@Z = ?InitServer@GameAPI@@QAEXPBDGH0G000@Z (public: void __thiscall GameAPI::InitServer(char const *,unsigned short,int,char const *,unsigned short,char const *,char const *,char const *))
+         76   4B 0001DDE0 ?IsAuthority@GameAPI@@QAE_NXZ = ?IsAuthority@GameAPI@@QAE_NXZ (public: bool __thiscall GameAPI::IsAuthority(void))
+         77   4C 0001EE70 ?IsConnectedToGameServer@GameAPI@@QAE_NXZ = ?IsConnectedToGameServer@GameAPI@@QAE_NXZ (public: bool __thiscall GameAPI::IsConnectedToGameServer(void))
+         78   4D 0001EE60 ?IsConnectedToMasterServer@GameAPI@@QAE_NXZ = ?IsConnectedToMasterServer@GameAPI@@QAE_NXZ (public: bool __thiscall GameAPI::IsConnectedToMasterServer(void))
+         79   4E 0001DE00 ?IsDedicatedServer@GameAPI@@QAE_NXZ = ?IsDedicatedServer@GameAPI@@QAE_NXZ (public: bool __thiscall GameAPI::IsDedicatedServer(void))
+         80   4F 0001DE10 ?IsTransitioningToNewServer@GameAPI@@QAE_NXZ = ?IsTransitioningToNewServer@GameAPI@@QAE_NXZ (public: bool __thiscall GameAPI::IsTransitioningToNewServer(void))
+         81   50 0001FF30 ?JoinGameServer@GameAPI@@QAEXH_N@Z = ?JoinGameServer@GameAPI@@QAEXH_N@Z (public: void __thiscall GameAPI::JoinGameServer(int,bool))
+         82   51 0001E790 ?Log@GameAPI@@QAAXPBDZZ = ?Log@GameAPI@@QAAXPBDZZ (public: void __cdecl GameAPI::Log(char const *,...))
+         83   52 0001F160 ?Login@GameAPI@@QAEXPBD0@Z = ?Login@GameAPI@@QAEXPBD0@Z (public: void __thiscall GameAPI::Login(char const *,char const *))
+         84   53 0001E880 ?Process@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z = ?Process@GameAPI@@QAEXABV?$function@$$A6AXXZ@std@@@Z (public: void __thiscall GameAPI::Process(class std::function<void __cdecl(void)> const &))
+         85   54 00020CB0 ?Random@@YAHH@Z = ?Random@@YAHH@Z (int __cdecl Random(int))
+         86   55 00020CD0 ?Random@@YAHHH@Z = ?Random@@YAHHH@Z (int __cdecl Random(int,int))
+         87   56 00020CF0 ?RandomFloat@@YAMMM@Z = ?RandomFloat@@YAMMM@Z (float __cdecl RandomFloat(float,float))
+         88   57 0001F910 ?Register@GameAPI@@QAEXPBD00@Z = ?Register@GameAPI@@QAEXPBD00@Z (public: void __thiscall GameAPI::Register(char const *,char const *,char const *))
+         89   58 00001980 ?Release@IPlayer@@QAEXXZ = ?Release@IPlayer@@QAEXXZ (public: void __thiscall IPlayer::Release(void))
+         90   59 00020C90 ?SetGameAPIObject@@YAXPAVGameAPI@@@Z = ?SetGameAPIObject@@YAXPAVGameAPI@@@Z (void __cdecl SetGameAPIObject(class GameAPI *))
+         91   5A 0001D9D0 ?Shutdown@GameAPI@@QAEXXZ = ?Shutdown@GameAPI@@QAEXXZ (public: void __thiscall GameAPI::Shutdown(void))
+         92   5B 0001D1E0 ?StartServerListener@GameAPI@@AAEXABUServerInfo@@@Z = ?StartServerListener@GameAPI@@AAEXABUServerInfo@@@Z (private: void __thiscall GameAPI::StartServerListener(struct ServerInfo const &))
+         93   5C 00020680 ?SubmitAnswer@GameAPI@@QAEXPBD0@Z = ?SubmitAnswer@GameAPI@@QAEXPBD0@Z (public: void __thiscall GameAPI::SubmitAnswer(char const *,char const *))
+         94   5D 0001DBD0 ?Tick@GameAPI@@QAEXM@Z = ?Tick@GameAPI@@QAEXM@Z (public: void __thiscall GameAPI::Tick(float))
+         95   5E 00020600 ?TransitionToNewGameServer@GameAPI@@QAEXXZ = ?TransitionToNewGameServer@GameAPI@@QAEXXZ (public: void __thiscall GameAPI::TransitionToNewGameServer(void))
+         96   5F 00020A20 ?UpdatePlayerCounts@GameAPI@@QAEXXZ = ?UpdatePlayerCounts@GameAPI@@QAEXXZ (public: void __thiscall GameAPI::UpdatePlayerCounts(void))
 
   Summary
 
