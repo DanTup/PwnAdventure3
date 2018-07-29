@@ -24,6 +24,14 @@
 			"*.obj": true,
 			"pubspec.lock": true,
 			".packages": true,
+		},
+		"editor.formatOnPaste": false,
+		"editor.formatOnType": false,
+		"files.associations": {
+			"iosfwd": "cpp",
+			"map": "cpp",
+			"xmemory0": "cpp",
+			"xstring": "cpp"
 		}
 	},
 	"launch": {
