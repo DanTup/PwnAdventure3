@@ -8,3 +8,4 @@ proxy/.packages
 proxy/pubspec.lock
 logs/
 secrets/
+*.pdb
