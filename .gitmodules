@@ -1,0 +1,4 @@
+[submodule "detours"]
+	path = detours
+	url = https://github.com/Microsoft/Detours
+	ignore = dirty
